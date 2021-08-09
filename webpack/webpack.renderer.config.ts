@@ -1,19 +1,31 @@
 // eslint-disable-next-line @typescript-eslint/no-require-imports
-const rules = require('./webpack.rules');
+const rules = require('./webpack.rules.ts');
 // eslint-disable-next-line @typescript-eslint/no-require-imports
-const plugins = require('./webpack.plugins');
+const plugins = require('./webpack.plugins.ts');
 
 rules.push({
+
   test: /\.css$/,
-  use: [{ loader: 'style-loader' }, { loader: 'css-loader' }],
+  use: [{
+    loader: 'style-loader',
+  }, {
+    loader: 'css-loader',
+  }],
 });
 
 module.exports = {
+
   module: {
     rules,
   },
   plugins,
   resolve: {
-    extensions: ['.js', '.ts', '.jsx', '.tsx', '.css']
+    extensions: [
+      '.js',
+      '.ts',
+      '.jsx',
+      '.tsx',
+      '.css',
+    ]
   },
 };

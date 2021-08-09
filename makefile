@@ -26,3 +26,37 @@ publish:
 	@echo "[INFO] Forge Publish"
 	@NODE_ENV=development \
 	$(forge) publish
+
+tests:
+	@echo "[INFO] Testing with Mocha"
+	@NODE_ENV=test \
+	$(mocha) --config test/.mocharc.json
+
+cov:
+	@echo "[INFO] Testing with Nyc and Mocha"
+	@NODE_ENV=test \
+	nyc $(mocha) --config test/.mocharc.json
+
+lint:
+	@echo "[INFO] Linting"
+	@NODE_ENV=production \
+	$(eslint) . --ext .ts,.tsx \
+	--config ./typescript/.eslintrc.json
+
+lint-fix:
+	@echo "[INFO] Linting and Fixing"
+	@NODE_ENV=development \
+	$(eslint) . --ext .ts,.tsx \
+	--config ./typescript/.eslintrc.json --fix
+
+install:
+	@echo "[INFO] Installing Development Dependencies"
+	@yarn install --production=false
+
+install-prod:
+	@echo "[INFO] Installing Production Dependencies"
+	@yarn install --production=true
+
+outdated: install
+	@echo "[INFO] Checking Outdated Dependencies"
+	@yarn outdated

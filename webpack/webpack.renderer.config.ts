@@ -1,4 +1,6 @@
+// eslint-disable-next-line @typescript-eslint/no-require-imports
 const rules = require('./webpack.rules');
+// eslint-disable-next-line @typescript-eslint/no-require-imports
 const plugins = require('./webpack.plugins');
 
 rules.push({
@@ -10,7 +12,7 @@ module.exports = {
   module: {
     rules,
   },
-  plugins: plugins,
+  plugins,
   resolve: {
     extensions: ['.js', '.ts', '.jsx', '.tsx', '.css']
   },

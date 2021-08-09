@@ -4,14 +4,9 @@
   "version": "1.0.0",
   "description": "Pixel Desktop",
   "main": "src/index.js",
-  "scripts": {
-    "start": "electron-forge start",
-    "package": "electron-forge package",
-    "make": "electron-forge make",
-    "publish": "electron-forge publish",
-    "lint": "echo \"No linting configured\""
-  },
-  "keywords": [],
+  "keywords": [
+    "Pixel"
+  ],
   "author": {
     "name": "WMXPY",
     "email": "wm@mengw.io"

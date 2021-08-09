@@ -48,6 +48,7 @@
     "@electron-forge/maker-rpm": "^6.0.0-beta.59",
     "@electron-forge/maker-squirrel": "^6.0.0-beta.59",
     "@electron-forge/maker-zip": "^6.0.0-beta.59",
+    "@sudoo/triforce": "^2.9.29",
     "electron": "13.1.8"
   }
 }

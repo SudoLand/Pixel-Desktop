@@ -1,8 +1,15 @@
 {
+    "env": {
+        "browser": true,
+        "es6": true,
+        "node": true
+    },
     "parserOptions": {
         "project": "./typescript/tsconfig.lint.json"
     },
     "extends": [
-        "@sudoo/eslint-config"
+        "@sudoo/eslint-config",
+        "@sudoo/eslint-config-react",
+        "@sudoo/eslint-config-react-a11y"
     ]
 }

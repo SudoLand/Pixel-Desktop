@@ -2,8 +2,10 @@
     "cSpell.words": [
         "WMXPY",
         "mocharc",
+        "relocator",
         "sudoo",
-        "triforce"
+        "triforce",
+        "vercel"
     ],
     "eslint.options": {
         "configFile": "./typescript/.eslintrc.json"

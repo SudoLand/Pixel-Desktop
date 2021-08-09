@@ -1,9 +1,16 @@
+/**
+ * @author WMXPY
+ * @namespace Webpack
+ * @description Renderer
+ */
+
 // eslint-disable-next-line @typescript-eslint/no-require-imports
 const ForkTsCheckerWebpackPlugin = require('fork-ts-checker-webpack-plugin');
 
 module.exports = {
 
   module: {
+
     rules: [
       {
         test: /\.node$/,
@@ -41,7 +48,7 @@ module.exports = {
     ],
   },
   plugins: [
-    new ForkTsCheckerWebpackPlugin()
+    new ForkTsCheckerWebpackPlugin(),
   ],
   resolve: {
     extensions: [
@@ -50,6 +57,6 @@ module.exports = {
       '.jsx',
       '.tsx',
       '.css',
-    ]
+    ],
   },
 };

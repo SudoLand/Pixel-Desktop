@@ -1,6 +1,14 @@
+/**
+ * @author WMXPY
+ * @namespace Webpack
+ * @description Main
+ */
+
 module.exports = {
+
   entry: './src/index.ts',
   module: {
+
     rules: [
       {
         test: /\.node$/,
@@ -29,6 +37,13 @@ module.exports = {
     ],
   },
   resolve: {
-    extensions: ['.js', '.ts', '.jsx', '.tsx', '.css', '.json']
+    extensions: [
+      '.js',
+      '.ts',
+      '.jsx',
+      '.tsx',
+      '.css',
+      '.json',
+    ],
   },
 };

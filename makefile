@@ -53,10 +53,6 @@ install:
 	@echo "[INFO] Installing Development Dependencies"
 	@yarn install --production=false
 
-install-prod:
-	@echo "[INFO] Installing Production Dependencies"
-	@yarn install --production=true
-
 outdated: install
 	@echo "[INFO] Checking Outdated Dependencies"
 	@yarn outdated

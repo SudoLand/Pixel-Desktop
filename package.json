@@ -3,7 +3,7 @@
   "productName": "pixel",
   "version": "1.0.0",
   "description": "Pixel Desktop",
-  "main": "src/index.ts",
+  "main": ".webpack/main",
   "keywords": [
     "Pixel"
   ],
